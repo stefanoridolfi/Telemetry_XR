@@ -1,0 +1,8 @@
+Per lanciare in modalità interattiva netconf-console
+netconf-console --host=1.1.1.1 --port=830 -u admin -p admin -i
+poi per inviare msg netconf usare rpc nome del file.xml come ad esempio rpc if.xml 
+
+per vedere la configurazione globale usare get, per vedere le interfaccie usare if1.xml per vedere le route statiche route.xml
+
+Se si vuole lanciare direttamente netconf con il messaggio netconf usare:
+netconf-console --host=1.1.1.1 --port=830 -u admin -p admin --rpc nomefile.xml

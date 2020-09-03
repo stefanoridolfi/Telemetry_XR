@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rpc-reply xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:4e1cf9d2-d8ac-40ff-8be2-27c93f8e6a34">
+ <data>
+  <interface-configurations xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ifmgr-cfg">
+   <interface-configuration>
+    <active>act</active>
+    <interface-name>MgmtEth0/RP0/CPU0/0</interface-name>
+    <shutdown/>
+   </interface-configuration>
+   <interface-configuration>
+    <active>act</active>
+    <interface-name>GigabitEthernet0/0/0/0</interface-name>
+    <ipv4-network xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-io-cfg">
+     <addresses>
+      <primary>
+       <address>1.1.1.1</address>
+       <netmask>255.255.255.0</netmask>
+      </primary>
+     </addresses>
+    </ipv4-network>
+   </interface-configuration>
+   <interface-configuration>
+    <active>act</active>
+    <interface-name>GigabitEthernet0/0/0/1</interface-name>
+    <ipv4-network xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-io-cfg">
+     <addresses>
+      <primary>
+       <address>2.2.2.1</address>
+       <netmask>255.255.255.0</netmask>
+      </primary>
+     </addresses>
+    </ipv4-network>
+   </interface-configuration>
+   <interface-configuration>
+    <active>act</active>
+    <interface-name>GigabitEthernet0/0/0/2</interface-name>
+    <shutdown/>
+   </interface-configuration>
+   <interface-configuration>
+    <active>act</active>
+    <interface-name>GigabitEthernet0/0/0/3</interface-name>
+    <shutdown/>
+   </interface-configuration>
+  </interface-configurations>
+ </data>
+</rpc-reply>

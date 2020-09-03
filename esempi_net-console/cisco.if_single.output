@@ -1,0 +1,20 @@
+<rpc-reply xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" 
+message-id="urn:uuid:34f48938-2cd4-456b-8f4a-180 c7ed78a78">
+ <data>
+  <interface-configurations xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ifmgr-cfg">
+   <interface-configuration>
+    <active>act</active>
+    <interface-name>GigabitEthernet0/0/0/0</interface-name>
+    <description>Giga0 test single IF Netconf</description>
+    <ipv4-network xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-io-cfg">
+     <addresses>
+      <primary>
+       <address>1.1.1.1</address>
+       <netmask>255.255.255.0</netmask>
+      </primary>
+     </addresses>
+    </ipv4-network>
+   </interface-configuration>
+  </interface-configurations>
+ </data>
+</rpc-reply>

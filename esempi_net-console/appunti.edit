@@ -1,0 +1,9 @@
+per cambiare la configurazione prima bisogna usare edit-config con targer il cadidate
+poi inviare il commit. A questo punto la configurazione su candidate è spostata su running
+
+Come esempio si canbi ala description della if GigaEthernet0/0/0/0
+0) controllare la configurazione corrente running: if_single_get-config_running.xml
+1) cambiare la configurazione su candidate: rpc if_single_edit_candidate.xml
+2) controllare che al configurazione su candidate sia stata cambiata: rpc if_single_get-config_candidate.xml
+3) inviare il commit: rpc config.xml
+4) controllare che la configurazione running sia stata cambiata: rpc if_single_get-config_running.xml

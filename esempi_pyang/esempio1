@@ -1,0 +1,5 @@
+genera albero da modulo yang
+pyang -f tree /home/user/yang-explorer/v/bin/share/yang/modules/ietf/ietf-routing.yang
+
+gnera descrizione in XML di un mdolulo yang
+pyang -f  sample-xml-skeleton /home/user/yang-explorer/v/bin/share/yang/modules/ietf/ietf-routing.yang

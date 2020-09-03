@@ -1,0 +1,4 @@
+per lanciare jupytercome root: jupyter notebook --allow-root
+lanciare da browswe su 127.0.0.1:8888
+password è: SSGRR
+

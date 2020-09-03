@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<get-config>
+<source> <running/>
+</source>
+<filter>
+<router-static xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ip-static-cfg"/>
+</filter>
+
+</get-config>
