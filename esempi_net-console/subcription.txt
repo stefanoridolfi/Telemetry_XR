@@ -1,0 +1,9 @@
+to configure subscripion
+netconf-console --host=1.1.1.1 --port=830 -u admin -p admin --create-subscription="NETCONF
+to see netconf-console --host=1.1.1.1 --port=830 -u admin -p admin --create-subscription="NETCONF
+it is dymanic is no not in configuration so in show running it does not appear
+
+netconf-console --host=1.1.1.1 --port=830 -u admin -p admin --get --xpath /netconf-state/streams
+
+Operation failed: MissingCapabilityError - Server does not support [:xpath]
+

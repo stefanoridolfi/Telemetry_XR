@@ -6,3 +6,34 @@ per vedere la configurazione globale usare get, per vedere le interfaccie usare 
 
 Se si vuole lanciare direttamente netconf con il messaggio netconf usare:
 netconf-console --host=1.1.1.1 --port=830 -u admin -p admin --rpc nomefile.xml
+
+per usare il comando get.schema: entrare in modalità interattiva come sopra 
+poi lanciar il comando get.schema nome del modulo (quindi del file) yang senza estensione:
+esempio: get.schema Cisco-IOS-XR-ipv4-ma-cfg
+La lista dei nomi dei moduli supportati si deduce dal comando hello OPPURE usando la funzione subsystem di ssh con il 
+comando che segue:
+ssh admin@1.1.1.1 -p 830 -s netconf
+
+
+PER usare get e NON get-config : netconf-console --host=1.1.1.1 --port=830 -u admin -p admin --rpc if_all_get.xml
+il risultato  è nel file if_all_get_output
+
+
+
+
+
+per vedere le operations Netconf supportate dal server : seleziono le righe dell'output di hello ovvero il file cisco.hello.output
+
+grep netconf:capability: cisco.hello.output
+
+per vedere le capabilities netconf supportate dal cisco:
+netconf-console --host=1.1.1.1 --port=830 -u admin -p admin --hello > NOMEFILE
+da questo file grep params:netconf NOMEFILE
+si vede che non c'è xpath mentre su CSR c'è !
+sul cisoc si vedono le capabilities con il comando show netconf-yang capabilities
+
+
+
+con comando
+netconf-console --host=1.1.1.1 --port=830 -u admin -p admin --rpc schema1.xml 
+ho la lista degli schemi con identifier che posso usare come filtro su schema2.xml
