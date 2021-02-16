@@ -1,0 +1,11 @@
+root@Ubuntu18:~/XR6.5.1/esempi_net-console# ssh admin@1.1.1.1 -p 830 -s netconf Password: <hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+ <capabilities>
+  <capability>urn:ietf:params:netconf:base:1.1</capability>
+  <capability>urn:ietf:params:netconf:capability:candidate:1.0</capability>
+  <capability>urn:ietf:params:netconf:capability:rollback-on-error:1.0</capability>
+  <capability>urn:ietf:params:netconf:capability:validate:1.1</capability>
+  <capability>urn:ietf:params:netconf:capability:confirmed-commit:1.1</capability>
+  <capability>urn:ietf:params:netconf:capability:notification:1.0</capability>
+  <capability>urn:ietf:params:netconf:capability:interleave:1.0</capability>
+  <capability>http://cisco.com/ns/yang/Cisco-IOS-XR-subscriber-accounting-oper?module=Cisco-IOS-XR-subscriber-accounting-oper&amp;revision=2017-09-07</capabil
+ity>
