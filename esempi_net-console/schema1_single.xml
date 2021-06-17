@@ -1,0 +1,12 @@
+<get>
+<filter type="subtree">
+<netconf-state xmlns="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">
+<schemas>
+<schema>
+<identifier>openconfig-if-ip</identifier>
+</schema>
+</schemas>
+</netconf-state>
+</filter>
+</get>
+

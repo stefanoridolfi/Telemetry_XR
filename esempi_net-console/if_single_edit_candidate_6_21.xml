@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<edit-config> <target> <candidate/> </target>
+  <config>
+  <interface-configurations xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ifmgr-cfg">
+   <interface-configuration>
+   <active>act</active>
+   <interface-name>GigabitEthernet0/0/0/2</interface-name>
+    <description>Giga 0/0/2 edit by Netconf netconf-console 17-6-21 NO commit</description>
+     </interface-configuration>
+  </interface-configurations>
+</config>
+</edit-config>

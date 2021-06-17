@@ -5,7 +5,7 @@
    <interface-configuration>
    <active>act</active>
    <interface-name>GigabitEthernet0/0/0/0</interface-name>
-    <description>test single IF Netconf  EDIT cambiata candidate 2021!!</description>
+    <description>test single IF Netconf  EDIT cambiata candidate 2021 giugno!!</description>
      </interface-configuration>
   </interface-configurations>
  </config>

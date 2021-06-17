@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<get-config>
+<source> <running/>
+</source>
+<filter>
+<ospf xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-ospf-cfg">
+</ospf>
+</filter>
+</get-config>
